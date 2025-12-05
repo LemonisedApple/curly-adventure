@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Kusi Portfolio About Me</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<style type="text/tailwindcss">
+    @layer utilities {
+      .bg-dotted-pattern {
+        background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,0.15) 1px, transparent 0);
+        background-size: 8px 8px;
+      }
+    }
+  </style>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#000000",
+            "background-light": "#FFFFFF",
+            "background-dark": "#111111",
+            "text-light": "#000000",
+            "text-dark": "#FFFFFF",
+            "border-light": "#E5E7EB",
+            "border-dark": "#374151"
+          },
+          fontFamily: {
+            display: ["Inter", "sans-serif"],
+            sans: ["Poppins", "sans-serif"]
+          },
+          borderRadius: {
+            DEFAULT: "0.5rem",
+          },
+        },
+      },
+    };
+  </script>
+<style>
+    .vertical-lines {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      justify-content: space-around;
+      pointer-events: none;
+      z-index: 0;
+    }
+    .vertical-lines>div {
+      width: 1px;
+      height: 100%;
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-[#2a45d7] to-[#c3bc98] font-sans text-white selection:bg-white selection:text-black">
+<div class="fixed inset-0 bg-dotted-pattern -z-10"></div>
+<div class="min-h-screen container mx-auto px-4 sm:px-6 lg:px-8 relative">
+<div class="vertical-lines">
+<div class="bg-white/10"></div>
+<div class="bg-white/10"></div>
+<div class="bg-white/10"></div>
+<div class="bg-white/10"></div>
+<div class="bg-white/10 hidden md:block"></div>
+<div class="bg-white/10 hidden md:block"></div>
+</div>
+<header class="py-8 border-b border-white/20">
+<div class="flex justify-between items-center">
+<a class="text-2xl font-bold font-display tracking-tight text-white" href="#">Kusi</a>
+<nav class="hidden md:flex items-center space-x-10 text-sm font-medium">
+<a class="text-white/70 hover:text-white transition-colors duration-300" href="#">Home</a>
+<a class="text-white/70 hover:text-white transition-colors duration-300" href="#">Gallery</a>
+<a class="text-white/70 hover:text-white transition-colors duration-300" href="#">Article</a>
+<a class="text-white/70 hover:text-white transition-colors duration-300" href="#">Contact</a>
+</nav>
+<button class="md:hidden p-2">
+<span class="material-icons text-white">menu</span>
+</button>
+</div>
+</header>
+<main class="relative pt-16 md:pt-24 pb-24">
+<div class="relative">
+<h1 class="font-display font-black text-[12vw] md:text-[10vw] lg:text-[120px] leading-none tracking-tighter uppercase text-white">
+          ABOUT ME
+        </h1>
+</div>
+<div class="mt-16 md:mt-24 grid grid-cols-1 md:grid-cols-12 gap-x-8 gap-y-16">
+<div class="md:col-span-4">
+<div class="sticky top-24">
+<h2 class="text-sm font-semibold uppercase tracking-widest text-white/70">Introduction</h2>
+<p class="mt-4 text-2xl md:text-3xl font-bold font-display text-white">Design Director &amp; Visualizer based in sunny California.</p>
+</div>
+</div>
+<div class="md:col-span-8 space-y-16">
+<section>
+<h3 class="text-sm font-semibold uppercase tracking-widest text-white/70">My Background</h3>
+<div class="mt-4 space-y-4 text-base text-white/90">
+<p>With over seven years of dedicated experience in the product design industry, I've had the privilege of transforming complex problems into intuitive, beautiful, and functional user experiences. My journey began with a passion for art and technology, which naturally led me to the dynamic world of digital design. I thrive on collaboration, working closely with cross-functional teams to bring innovative ideas to life.</p>
+<p>My philosophy is simple: great design is about more than just aesthetics; it's about creating meaningful connections between people and products. I am constantly learning, adapting, and pushing the boundaries of what's possible to deliver designs that not only meet user needs but also exceed business goals.</p>
+</div>
+</section>
+<section>
+<h3 class="text-sm font-semibold uppercase tracking-widest text-white/70">Experience</h3>
+<div class="mt-4 border-l border-white/20">
+<div class="relative pl-8 pb-8">
+<div class="absolute -left-1.5 top-1 h-3 w-3 rounded-full bg-white"></div>
+<p class="text-sm font-semibold">Lead Designer, Tech Innovate Inc.</p>
+<p class="text-xs text-white/70">2020 - Present</p>
+<p class="mt-2 text-sm text-white/90">Leading design initiatives for flagship products, mentoring junior designers, and shaping design strategy.</p>
+</div>
+<div class="relative pl-8 pb-8">
+<div class="absolute -left-1.5 top-1 h-3 w-3 rounded-full bg-white"></div>
+<p class="text-sm font-semibold">Senior Product Designer, Creative Solutions</p>
+<p class="text-xs text-white/70">2017 - 2020</p>
+<p class="mt-2 text-sm text-white/90">Worked on end-to-end design for mobile and web applications, focusing on user research and prototyping.</p>
+</div>
+<div class="relative pl-8">
+<div class="absolute -left-1.5 top-1 h-3 w-3 rounded-full bg-white"></div>
+<p class="text-sm font-semibold">UX/UI Designer, Digital Start</p>
+<p class="text-xs text-white/70">2015 - 2017</p>
+<p class="mt-2 text-sm text-white/90">Contributed to the visual and interactive design of various client projects, gaining foundational experience.</p>
+</div>
+</div>
+</section>
+<section>
+<h3 class="text-sm font-semibold uppercase tracking-widest text-white/70">Skills &amp; Tools</h3>
+<div class="mt-4 grid grid-cols-2 sm:grid-cols-3 gap-4">
+<div class="p-4 border border-white/20 rounded-lg bg-white/5 backdrop-blur-sm">
+<h4 class="font-semibold text-sm">UI/UX Design</h4>
+<p class="text-xs text-white/70">Crafting user-centric interfaces.</p>
+</div>
+<div class="p-4 border border-white/20 rounded-lg bg-white/5 backdrop-blur-sm">
+<h4 class="font-semibold text-sm">Prototyping</h4>
+<p class="text-xs text-white/70">Bringing ideas to life interactively.</p>
+</div>
+<div class="p-4 border border-white/20 rounded-lg bg-white/5 backdrop-blur-sm">
+<h4 class="font-semibold text-sm">Design Systems</h4>
+<p class="text-xs text-white/70">Building scalable design frameworks.</p>
+</div>
+<div class="p-4 border border-white/20 rounded-lg bg-white/5 backdrop-blur-sm">
+<h4 class="font-semibold text-sm">Figma</h4>
+<p class="text-xs text-white/70">Primary design and collaboration tool.</p>
+</div>
+<div class="p-4 border border-white/20 rounded-lg bg-white/5 backdrop-blur-sm">
+<h4 class="font-semibold text-sm">Adobe Creative Suite</h4>
+<p class="text-xs text-white/70">For visuals, graphics, and more.</p>
+</div>
+<div class="p-4 border border-white/20 rounded-lg bg-white/5 backdrop-blur-sm">
+<h4 class="font-semibold text-sm">HTML/CSS</h4>
+<p class="text-xs text-white/70">Basic understanding for handoffs.</p>
+</div>
+</div>
+</section>
+</div>
+</div>
+</main>
+</div>
+</body></html>

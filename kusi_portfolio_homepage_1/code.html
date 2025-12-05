@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Kusi Portfolio Homepage</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#FFFFFF", 
+              "background-light": "#FFFFFF",
+              "background-dark": "#111111",
+              "text-light": "#FFFFFF",
+              "text-dark": "#FFFFFF",
+              "border-light": "#FFFFFF",
+              "border-dark": "#FFFFFF"
+            },
+            fontFamily: {
+              display: ["Inter", "sans-serif"],
+              sans: ["Poppins", "sans-serif"]
+            },
+            borderRadius: {
+              DEFAULT: "0.5rem",
+            },
+          },
+        },
+      };
+    </script>
+<style type="text/tailwindcss">
+        body {
+            background: linear-gradient(135deg, #2a45d7 0%, #c3bc98 100%);
+            position: relative;
+        }
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,0.08) 1px, transparent 0);
+            background-size: 8px 8px;
+            pointer-events: none;
+            z-index: -1;
+        }
+        .vertical-lines {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            justify-content: space-around;
+            pointer-events: none;
+            z-index: -1;
+        }
+        .vertical-lines > div {
+            width: 1px;
+            height: 100%;
+        }
+        .dark body {
+             background: linear-gradient(135deg, #121e5e 0%, #5e594a 100%);
+        }
+        .dark body::before {
+            background-image: radial-gradient(circle at 1px 1px, rgba(0,0,0,0.2) 1px, transparent 0);
+        }
+    </style>
+</head>
+<body class="font-sans text-text-light dark:text-text-dark selection:bg-white selection:text-black">
+<div class="min-h-screen container mx-auto px-4 sm:px-6 lg:px-8 relative">
+<div class="vertical-lines">
+<div class="bg-border-light/20 dark:bg-border-dark/10"></div>
+<div class="bg-border-light/20 dark:bg-border-dark/10"></div>
+<div class="bg-border-light/20 dark:bg-border-dark/10"></div>
+<div class="bg-border-light/20 dark:bg-border-dark/10"></div>
+<div class="bg-border-light/20 dark:bg-border-dark/10 hidden md:block"></div>
+<div class="bg-border-light/20 dark:bg-border-dark/10 hidden md:block"></div>
+</div>
+<header class="py-8 border-b border-border-light/30 dark:border-border-dark/20">
+<div class="flex justify-between items-center">
+<a class="text-2xl font-bold font-display tracking-tight text-text-light dark:text-text-dark" href="#">Kusi</a>
+<nav class="hidden md:flex items-center space-x-10 text-sm font-medium">
+<a class="text-text-light dark:text-text-dark border-b-2 border-primary pb-1" href="#">Home</a>
+<a class="text-gray-200 dark:text-gray-300 hover:text-text-light dark:hover:text-text-dark transition-colors duration-300" href="#">Gallery</a>
+<a class="text-gray-200 dark:text-gray-300 hover:text-text-light dark:hover:text-text-dark transition-colors duration-300" href="#">Article</a>
+<a class="text-gray-200 dark:text-gray-300 hover:text-text-light dark:hover:text-text-dark transition-colors duration-300" href="#">Contact</a>
+</nav>
+<button class="md:hidden p-2">
+<span class="material-icons text-text-light dark:text-text-dark">menu</span>
+</button>
+</div>
+</header>
+<main class="relative pt-16 md:pt-24">
+<div class="flex items-center space-x-4 mb-8">
+<button class="px-5 py-2 border border-border-light/30 dark:border-border-dark/20 rounded-full text-xs font-semibold bg-white/10 backdrop-blur-sm text-text-light dark:text-text-dark">Kusi</button>
+<button class="px-5 py-2 border border-border-light/30 dark:border-border-dark/20 rounded-full text-xs font-semibold bg-white/10 backdrop-blur-sm text-text-light dark:text-text-dark">Design Director &amp; Visualizers</button>
+</div>
+<div class="relative">
+<h1 class="font-display font-black text-[8vw] md:text-[10vw] lg:text-[120px] leading-none tracking-tighter uppercase text-text-light dark:text-text-dark">
+                    DESIGN DIRECTOR
+                </h1>
+<h2 class="font-display font-black text-[8vw] md:text-[10vw] lg:text-[120px] leading-none tracking-tighter uppercase text-text-light dark:text-text-dark">
+                    &amp; VISUALIZES
+                </h2>
+<div class="absolute top-1/2 right-0 -translate-y-1/2 hidden lg:block">
+<svg class="w-28 h-28 text-text-light dark:text-text-dark" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.5" viewBox="0 0 24 24">
+<polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+<polyline points="17 6 23 6 23 12"></polyline>
+</svg>
+</div>
+</div>
+<div class="mt-8 md:mt-0 flex flex-col md:flex-row items-start justify-between">
+<div class="w-full md:w-1/3 pt-12">
+<div class="flex items-start space-x-4">
+<div class="w-px h-28 bg-border-light/30 dark:bg-border-dark/20"></div>
+<div>
+<p class="text-sm font-semibold tracking-wider">HEY, I'M KUSI</p>
+<p class="text-sm mt-1 text-gray-200 dark:text-gray-300">7+ YEARS OF EXPERIENCE<br/>IN PRODUCT DESIGN</p>
+<button class="mt-4 flex items-center space-x-2 px-6 py-3 border border-border-light/30 dark:border-border-dark/20 rounded-full text-xs font-bold uppercase tracking-widest text-text-light dark:text-text-dark bg-white/10 backdrop-blur-sm hover:bg-white/20 transition-colors duration-300">
+<span>About Me</span>
+<span class="material-icons text-base">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<div class="w-full md:w-2/3 mt-8 md:mt-[-150px] lg:mt-[-200px] flex justify-center md:justify-end relative">
+<div class="absolute bottom-0 left-1/2 md:left-1/4 -translate-x-1/2 translate-y-1/4 w-48 h-48 bg-blue-300/10 dark:bg-blue-900/10 rounded-full blur-2xl"></div>
+<div class="absolute bottom-0 left-1/2 md:left-1/4 -translate-x-1/4 translate-y-1/4 w-48 h-48 bg-yellow-200/10 dark:bg-yellow-800/10 rounded-full blur-2xl"></div>
+<img alt="Profile image of Kusi, a design director, looking to the side." class="relative z-10 w-full max-w-sm md:max-w-md lg:max-w-lg object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDS9em295IlyeuBzRJw3tg9UcmD8RaKw4tZB25pgGERA0lnuEJJRiV068iIdfiZl9GiiJ_Pk5UDn7rbElrhWYRl5EJU9XnBW0o3EOjTzPqfepTr5uCBFec7nenXYAudrjFZP3dFCqH5X5ZtzcqwvacV6pQ9SdlpbbxRyL4Tm1TyGebH6Qd7YW2-wNzLsmtIS2qRH2LWstQbXXMcRlyVPjBrNEsGFfbo7jSo9kUlo9hLYUCMF-nTpK-SDjNHwEp29WNrxKqJE_gAj0gZ"/>
+</div>
+</div>
+<div class="hidden md:flex justify-end absolute bottom-8 right-8">
+<div class="relative group w-48 h-28 rounded-lg overflow-hidden border border-border-light/30 dark:border-border-dark/20 shadow-lg">
+<img alt="A small preview of a team collaborating in a workshop." class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxlfVcnbC3WkD62uJOYEU512VOaVpOPtOXJjL0gXfK-5XP286mHjreM476MF6WX0NiZAuj0Z9hyfgxsACXTgsQQ_3JyCfgk8t9BgXAhDbxZn3sJKPjdjkkGJYAZi7XLyO-531pRRDgm90XToKi3FpLMP-lfhJGKbbeZy8s7DrHWnxNpQ8hBksHLUZXOZ_gMHhVCYFJvXW-qcYxdtIj6qsI7QqJvZmrq-vEPzGbc6TA-tklq_AAAu3bTkLz1dr6jI5-FCugPkrGAPtq"/>
+<div class="absolute inset-0 bg-black/30 flex items-center justify-center">
+<button class="w-12 h-12 rounded-full bg-white/30 backdrop-blur-sm flex items-center justify-center text-white transition-transform duration-300 group-hover:scale-110">
+<span class="material-icons">play_arrow</span>
+</button>
+</div>
+</div>
+</div>
+</main>
+</div>
+</body></html>

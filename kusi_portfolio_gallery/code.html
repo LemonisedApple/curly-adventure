@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Kusi Portfolio Gallery</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "background-light": "#ffffff",
+                        "background-dark": "#101622",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24
+        }
+        .group:hover .group-hover\:opacity-100 {
+            opacity: 1;
+        }
+        .group:hover .group-hover\:translate-y-0 {
+            transform: translateY(0);
+        }
+        .grid-bg {
+            background-image:
+                linear-gradient(to right, rgba(255, 255, 255, 0.2) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(255, 255, 255, 0.2) 1px, transparent 1px);
+            background-size: 4rem 4rem;
+            background-position: top center;
+        }
+        .dark .grid-bg {
+            background-image:
+                linear-gradient(to right, rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+        }
+        .dotted-overlay {
+            background-image: radial-gradient(circle, rgba(0,0,0,0.05) 1px, transparent 1px);
+            background-size: 6px 6px;
+        }
+        .dark .dotted-overlay {
+            background-image: radial-gradient(circle, rgba(0,0,0,0.1) 1px, transparent 1px);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-900 dark:text-white">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden" style="background-image: linear-gradient(to bottom, #2a45d7, #c3bc98);">
+<div class="absolute inset-0 grid-bg"></div>
+<div class="absolute inset-0 dotted-overlay"></div>
+<div class="relative flex h-full grow flex-col">
+<div class="flex flex-1 justify-center py-5 sm:px-10 md:px-20 lg:px-40">
+<div class="flex w-full max-w-[960px] flex-1 flex-col">
+<header class="flex items-center justify-between whitespace-nowrap px-4 py-4 sm:px-10">
+<div class="flex items-center gap-4 text-white">
+<div class="text-xl font-bold leading-tight tracking-[-0.015em] text-white">Kusi</div>
+</div>
+<nav class="flex flex-1 justify-end gap-2 sm:gap-8">
+<div class="hidden items-center gap-9 sm:flex">
+<a class="text-sm font-medium leading-normal text-white/70 transition-colors hover:text-white" href="#">Home</a>
+<a class="text-sm font-bold leading-normal text-white" href="#">Gallery</a>
+<a class="text-sm font-medium leading-normal text-white/70 transition-colors hover:text-white" href="#">Article</a>
+<a class="text-sm font-medium leading-normal text-white/70 transition-colors hover:text-white" href="#">Contact</a>
+</div>
+</nav>
+</header>
+<main class="flex flex-1 flex-col gap-16 py-10 md:gap-24 md:py-20">
+<div class="flex flex-col gap-4 text-center">
+<h1 class="text-5xl font-black leading-tight tracking-tighter text-white md:text-7xl">MY WORKS</h1>
+</div>
+<div class="grid grid-cols-1 gap-x-6 gap-y-12 sm:grid-cols-2">
+<a class="group" href="#">
+<div class="relative overflow-hidden rounded-lg">
+<img alt="Abstract colorful shapes for Oasis branding" class="w-full aspect-video object-cover transition-transform duration-300 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtUZ0rnGGMRjZSrUEyBdGZJnZAcHltlphLlpSzJFmUvkE7l76TqlnEOkD6OXUWwb4iJTfSntfeg0-_f7OgJxqr-FUUhbaMGnyil6cUsdNVucc9bA1XfECtxuHdujliED5yCRdl_wdBw9JiXWd_eUb-TwSF7oROTpEvIqc_tt_BEcSVY89i7uewhGr07OaY4lc48tliAV2PFMNlvpSl0aelFbhy0LA2jR-qzT9uN_ZtB5cbwzVrljiUSvkO2oHHt2kC_RvhtV5_PEgO"/>
+</div>
+<p class="mt-4 text-base font-bold leading-normal text-white">Oasis Branding</p>
+</a>
+<a class="group" href="#">
+<div class="relative overflow-hidden rounded-lg">
+<img alt="Sleek and modern UI for a fintech application" class="w-full aspect-video object-cover transition-transform duration-300 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNCFVvyropX82M9yjYlO3H_74vjsvIdqu4PGy4ihG6reyqFgw3uBpSBsVrcJ3D268smshpCCP-jpqrDKCx2JjH4LKvCoeGwzpw1sGwtMX66rkPLo-OH051A_653vq2BBn4zLocUMI0Y2JwKpO_h4JsG66lWMtIhK5-sAu7FF9hnxapwoTi1V74AY-zgmeuwIz4U6MeAF15uVeYNVK_CmLbuhFxKrE5pUYRmTadnd6SGMmkvrO_gp76yEHsCsRz6Yj3c9rrI3i2Efvz"/>
+</div>
+<p class="mt-4 text-base font-bold leading-normal text-white">Fintech App UI/UX</p>
+</a>
+<a class="group" href="#">
+<div class="relative overflow-hidden rounded-lg">
+<img alt="Vibrant and user-friendly e-commerce website design" class="w-full aspect-video object-cover transition-transform duration-300 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCyq0pMnjSyN5voz1TOvnwyEITCJx5H-ffs2soGEyaal2_2a_pCSSCtNzABAO3Kd1f9vCeDShLVz6iueAyxnN4jb3uKJfjWVccblXNqdXvQDGAFVAV90l0z3v_flJJkKuo-4149djEs8Pw_iz1cZLrVadw-RHF4GyVaCan40IWOjrKqZK2S994XZSb3Ad2hwE881A_z6Sr-pm48FVj9-TEUv7CBY0cLeYQdka_LmjZTrIpFWwbs7X3rpjMBgpbVF_j0ZlK3HZagb4F"/>
+</div>
+<p class="mt-4 text-base font-bold leading-normal text-white">E-commerce Platform Redesign</p>
+</a>
+<a class="group" href="#">
+<div class="relative overflow-hidden rounded-lg">
+<img alt="Whimsical and detailed digital illustrations" class="w-full aspect-video object-cover transition-transform duration-300 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGX14bWZjypxI6C2g8mygdP2DmrvIzogFiR7vm31qA6fJ7tJRr312NnsnTmgmk-UsFDFmHOGZG-z4Six1fWvAzzuHlhzMGYP34VeNAA2PF51BQ7zppbYbYv9u2RDXkOSBcZC5aZAj1quHrvwkq7PAvsyq_5zXLngBBRcBE7LknMJ15Swxce-XWjbEetgU3749RTz8DhpBoajxYOOvo8n8etIDNgn1yseiqQn2FxTJIo83-BAYFv7WxErth0FYVbIzupRNOfoeMjkbR"/>
+</div>
+<p class="mt-4 text-base font-bold leading-normal text-white">Editorial Illustrations</p>
+</a>
+<a class="group" href="#">
+<div class="relative overflow-hidden rounded-lg">
+<img alt="Clean and data-driven SaaS dashboard interface" class="w-full aspect-video object-cover transition-transform duration-300 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcaQcGFMefImuT75CFBEl9COE3aRspgcJfTlYajbDTRB2-ZM5Jx0zOo-n-zKwGJsU_2ye9kvLkIubN4uryF19PifratNBEolZXXhoNH5e-9GaWjnY5j3IVJ22iRkeHhhMJO2xA3bGrZ0ylOF2zadV6clB_-UlfKhT4kQeDI2UesGiQMGaa_Hq-Ag-HcZYY8x5Lf5l2tndyeQnxAdam9ZzLcvJ2nqjIP2naH7rkpH7a3uHMQblvW-3GWEDAuT4STcjj7a3g7Oh5MRQ9"/>
+</div>
+<p class="mt-4 text-base font-bold leading-normal text-white">SAAS Dashboard Concept</p>
+</a>
+<a class="group" href="#">
+<div class="relative overflow-hidden rounded-lg">
+<img alt="A set of custom-designed, minimalist mobile app icons" class="w-full aspect-video object-cover transition-transform duration-300 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbpzedIZyiYTLB4xi7yzEaVplA1u4bHrY1YeUjfPo5dAJzk1uig1E4Ak9HSxY8L8hFCtxN-BfySt7Vh09xg6kRTfN_rjPAl-ARvmmZepN7D4wv7dhf1Rj_dLGieMMMJJfz0TNHc341twRAt7g2W1SPZaC4oLgpsdupBRZyhizZqyWLGGQJEyFmNPjvc63hTfyUMq-wPBrT7RxgdvzUcofVIOd9Mp1nh7HwQBR6r8WKbc_Ci2pZg4Ob0nC2LStdfDXOzIMR2CNUL0Wf"/>
+</div>
+<p class="mt-4 text-base font-bold leading-normal text-white">Mobile App Iconography</p>
+</a>
+</div>
+</main>
+<footer class="mt-auto py-8">
+<div class="flex flex-col items-center justify-between gap-4 sm:flex-row">
+<p class="text-sm text-white/70">© 2024 Kusi</p>
+<div class="flex items-center gap-4">
+<a class="text-white/70 transition-colors hover:text-white" href="#">
+<svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+<path clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.286 2.866 7.91 6.726 9.173.49.09.668-.212.668-.472 0-.232-.008-.847-.013-1.664-2.782.604-3.37-1.34-3.37-1.34-.446-1.132-1.088-1.434-1.088-1.434-.89-.608.068-.596.068-.596.984.07 1.503 1.01 1.503 1.01.874 1.498 2.293 1.065 2.852.815.09-.633.342-1.065.62-1.31-2.176-.248-4.464-1.088-4.464-4.842 0-1.07.382-1.944 1.01-2.63-.102-.248-.438-1.244.096-2.59 0 0 .823-.264 2.696 1.004A9.435 9.435 0 0112 7.29a9.472 9.472 0 012.454.328c1.873-1.268 2.693-1.004 2.693-1.004.536 1.346.2 2.342.1 2.59.63.686 1.01 1.56 1.01 2.63 0 3.764-2.292 4.592-4.478 4.834.35.302.664.902.664 1.816 0 1.31-.012 2.368-.012 2.69 0 .262.176.566.674.47C19.138 19.91 22 16.285 22 12c0-5.523-4.477-10-10-10z" fill-rule="evenodd"></path>
+</svg>
+</a>
+<a class="text-white/70 transition-colors hover:text-white" href="#">
+<svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+<path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c1.38 0 2.69-.28 3.9-.78A10.01 10.01 0 0112 22C6.48 22 2 17.52 2 12S6.48 2 12 2zm8.94 13.91c.06.3.06.6.06.91 0 5.48-4.18 11.8-11.8 11.8-2.35 0-4.53-.69-6.38-1.87.33.04.66.06 1 .06 1.95 0 3.75-.66 5.18-1.79-1.82-.03-3.36-1.23-3.89-2.88.25.05.51.07.77.07.38 0 .75-.05 1.1-.15-1.9-.38-3.33-2.07-3.33-4.08V9.92c.56.31 1.2.5 1.88.52-1.12-.75-1.85-2.03-1.85-3.48 0-.77.2-1.47.57-2.08 2.05 2.52 5.12 4.18 8.6 4.36-.07-.31-.11-.63-.11-.95 0-2.3 1.86-4.18 4.18-4.18.8 0 1.56.34 2.08.88.63-.12 1.24-.36 1.78-.68-.21.65-.65 1.2-1.22 1.55.56-.07 1.1-.22 1.59-.44-.38.55-.84 1.04-1.38 1.45z"></path>
+</svg>
+</a>
+<a class="text-white/70 transition-colors hover:text-white" href="#">
+<svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+<path clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zM8.293 17.5H5.75V9.167h2.542V17.5zm-1.27-9.458a1.474 1.474 0 11.002-2.948 1.474 1.474 0 01-.002 2.948zM18.25 17.5h-2.542v-4.14c0-.986-.018-2.257-1.375-2.257-1.375 0-1.587 1.074-1.587 2.186v4.21h-2.542V9.167h2.438v1.117h.035c.338-.64 1.164-1.317 2.404-1.317 2.572 0 3.047 1.693 3.047 3.895v4.638z" fill-rule="evenodd"></path>
+</svg>
+</a>
+</div>
+</div>
+</footer>
+</div>
+</div>
+</div>
+</div>
+</body></html>
